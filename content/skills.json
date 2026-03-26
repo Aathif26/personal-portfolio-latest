@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Machine Learning",
+    "level": 95,
+    "category": "ai"
+  },
+  {
+    "name": "Deep Learning / NLP",
+    "level": 92,
+    "category": "ai"
+  },
+  {
+    "name": "LLM Fine-tuning",
+    "level": 90,
+    "category": "ai"
+  },
+  {
+    "name": "Computer Vision",
+    "level": 85,
+    "category": "ai"
+  },
+  {
+    "name": "React / Next.js",
+    "level": 95,
+    "category": "frontend"
+  },
+  {
+    "name": "TypeScript",
+    "level": 93,
+    "category": "frontend"
+  },
+  {
+    "name": "Tailwind CSS",
+    "level": 90,
+    "category": "frontend"
+  },
+  {
+    "name": "Motion / Animation",
+    "level": 88,
+    "category": "frontend"
+  },
+  {
+    "name": "Node.js / Express",
+    "level": 92,
+    "category": "backend"
+  },
+  {
+    "name": "Python / FastAPI",
+    "level": 94,
+    "category": "backend"
+  },
+  {
+    "name": "GraphQL",
+    "level": 85,
+    "category": "backend"
+  },
+  {
+    "name": "System Design",
+    "level": 90,
+    "category": "backend"
+  },
+  {
+    "name": "AWS / GCP",
+    "level": 88,
+    "category": "devops"
+  },
+  {
+    "name": "Docker / K8s",
+    "level": 86,
+    "category": "devops"
+  },
+  {
+    "name": "CI/CD Pipelines",
+    "level": 84,
+    "category": "devops"
+  },
+  {
+    "name": "PostgreSQL",
+    "level": 90,
+    "category": "database"
+  },
+  {
+    "name": "MongoDB",
+    "level": 82,
+    "category": "database"
+  }
+]

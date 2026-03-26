@@ -1,0 +1,77 @@
+[
+  {
+    "id": "neural-search",
+    "title": "NeuralSearch Engine",
+    "description": "AI-powered semantic search platform processing 10M+ documents with sub-200ms latency.",
+    "longDescription": "Built a production semantic search engine leveraging transformer embeddings, HNSW indexing, and a hybrid retrieval pipeline. The system handles 10M+ documents with p99 latency under 200ms and supports real-time index updates.",
+    "techStack": ["Python", "FastAPI", "PyTorch", "Pinecone", "React", "Redis"],
+    "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
+    "category": "AI",
+    "githubUrl": "https://github.com",
+    "liveUrl": "https://example.com",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "llm-orchestrator",
+    "title": "LLM Orchestration Platform",
+    "description": "Enterprise platform for managing, evaluating, and deploying LLM workflows at scale.",
+    "longDescription": "Designed a multi-tenant platform for orchestrating LLM chains, A/B testing prompts, managing model versioning, and monitoring inference costs. Reduced prompt iteration cycles from days to hours.",
+    "techStack": ["Next.js", "TypeScript", "Python", "LangChain", "PostgreSQL", "Docker"],
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4638d9f8e?auto=format&fit=crop&q=80&w=800",
+    "category": "AI",
+    "githubUrl": "https://github.com",
+    "liveUrl": "https://example.com",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "real-time-analytics",
+    "title": "Real-Time Analytics Dashboard",
+    "description": "High-throughput analytics dashboard processing 1M+ events/sec with live visualizations.",
+    "longDescription": "Engineered a real-time analytics platform with Apache Kafka event streaming, ClickHouse OLAP storage, and a WebSocket-driven React dashboard displaying live metrics with sub-second refresh.",
+    "techStack": ["React", "D3.js", "Node.js", "Kafka", "ClickHouse", "WebSocket"],
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    "category": "Data",
+    "githubUrl": "https://github.com",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "vision-pipeline",
+    "title": "Computer Vision Pipeline",
+    "description": "Edge-deployed vision system for real-time object detection and tracking at 60fps.",
+    "longDescription": "Built an optimized computer vision pipeline using YOLO and DeepSORT for real-time multi-object tracking. Deployed on edge devices with TensorRT optimization achieving 60fps inference.",
+    "techStack": ["Python", "PyTorch", "TensorRT", "OpenCV", "CUDA", "FastAPI"],
+    "imageUrl": "https://images.unsplash.com/photo-1527430297724-4687b40c74c8?auto=format&fit=crop&q=80&w=800",
+    "category": "AI",
+    "githubUrl": "https://github.com",
+    "featured": false,
+    "order": 4
+  },
+  {
+    "id": "microservices-platform",
+    "title": "Cloud-Native Microservices",
+    "description": "Event-driven microservices platform serving 50K+ concurrent users with 99.99% uptime.",
+    "longDescription": "Architected a cloud-native platform with 12 microservices, event-driven communication via RabbitMQ, distributed tracing, and auto-scaling on Kubernetes. Achieved 99.99% uptime SLA.",
+    "techStack": ["Go", "gRPC", "Kubernetes", "Terraform", "Prometheus", "Grafana"],
+    "imageUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800",
+    "category": "Infrastructure",
+    "githubUrl": "https://github.com",
+    "featured": false,
+    "order": 5
+  },
+  {
+    "id": "ai-code-review",
+    "title": "AI Code Review Assistant",
+    "description": "Intelligent code review tool that analyzes PRs for bugs, security issues, and style.",
+    "longDescription": "Created an AI-powered code review assistant integrated with GitHub that analyzes pull requests for potential bugs, security vulnerabilities, and coding style. Uses fine-tuned LLMs for contextual code understanding.",
+    "techStack": ["TypeScript", "Next.js", "Python", "GPT-4", "GitHub API", "PostgreSQL"],
+    "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800",
+    "category": "Full-Stack",
+    "githubUrl": "https://github.com",
+    "liveUrl": "https://example.com",
+    "featured": false,
+    "order": 6
+  }
+]

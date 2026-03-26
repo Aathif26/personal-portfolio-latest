@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Frontend Development",
+    "description": "Building responsive & interactive UIs",
+    "icon": "layout",
+    "iconColor": "blue",
+    "iconBg": "bg-blue-500/10",
+    "tags": [
+      "Next.js",
+      "React.js",
+      "React Native",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux"
+    ],
+    "className": "md:col-span-1"
+  },
+  {
+    "title": "Backend Architecture",
+    "description": "Scalable server-side solutions",
+    "icon": "server",
+    "iconColor": "emerald",
+    "iconBg": "bg-emerald-500/10",
+    "tags": [
+      "Node.js",
+      "Express",
+      "Supabase",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "REST APIs"
+    ],
+    "className": "md:col-span-1"
+  },
+  {
+    "title": "AI & Machine Learning",
+    "description": "Integrating intelligent features",
+    "icon": "brain",
+    "iconColor": "purple",
+    "iconBg": "bg-purple-500/10",
+    "tags": [
+      "OpenAI API",
+      "Claude API",
+      "Gemini API",
+      "LangChain",
+      "Vector DBs",
+      "Python",
+      "TensorFlow"
+    ],
+    "className": "md:col-span-1"
+  },
+  {
+    "title": "Tools & DevOps",
+    "description": "Ops, deployment & workflow",
+    "icon": "terminal",
+    "iconColor": "orange",
+    "iconBg": "bg-orange-500/10",
+    "tags": [
+      "Git",
+      "Docker",
+      "AWS",
+      "Vercel",
+      "Linux",
+      "CI/CD",
+      "Postman"
+    ],
+    "className": "md:col-span-1"
+  }
+]

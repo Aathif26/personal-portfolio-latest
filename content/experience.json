@@ -1,0 +1,53 @@
+[
+  {
+    "id": "staff-eng",
+    "role": "Staff AI Engineer",
+    "company": "TechCorp AI",
+    "period": "2022 — Present",
+    "description": "Leading AI platform architecture and driving adoption of ML-powered features across the product suite.",
+    "achievements": [
+      "Architected LLM infrastructure serving 5M+ daily requests with 99.9% uptime",
+      "Led team of 8 engineers building next-gen AI features, increasing user engagement by 40%",
+      "Designed RAG pipeline reducing hallucination rate by 65% in production",
+      "Established ML engineering best practices adopted across 4 product teams"
+    ]
+  },
+  {
+    "id": "senior-eng",
+    "role": "Senior Full-Stack Engineer",
+    "company": "ScaleUp Inc.",
+    "period": "2020 — 2022",
+    "description": "Owned end-to-end architecture for the core product, from database to UI.",
+    "achievements": [
+      "Rebuilt the frontend with Next.js, improving Core Web Vitals scores by 60%",
+      "Migrated monolith to microservices, reducing deploy times from 45min to 3min",
+      "Implemented real-time features serving 50K concurrent WebSocket connections",
+      "Mentored 5 junior engineers through architectural design reviews"
+    ]
+  },
+  {
+    "id": "ml-eng",
+    "role": "Machine Learning Engineer",
+    "company": "DataFlow Labs",
+    "period": "2018 — 2020",
+    "description": "Built production ML systems for NLP and recommendation engines.",
+    "achievements": [
+      "Developed NLP pipeline processing 2M+ documents daily with 94% accuracy",
+      "Built recommendation engine increasing click-through rates by 35%",
+      "Reduced model training costs by 50% through infrastructure optimization",
+      "Published internal ML toolkit used by 20+ data scientists"
+    ]
+  },
+  {
+    "id": "sde",
+    "role": "Software Development Engineer",
+    "company": "CloudBase",
+    "period": "2016 — 2018",
+    "description": "Full-stack development on cloud infrastructure management platform.",
+    "achievements": [
+      "Built React component library used across 3 product teams",
+      "Designed RESTful APIs handling 10K+ requests/sec",
+      "Implemented CI/CD pipeline reducing release cycle from weekly to daily"
+    ]
+  }
+]
