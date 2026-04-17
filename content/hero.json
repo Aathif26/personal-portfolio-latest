@@ -1,8 +1,8 @@
 {
-  "name": "John Doe",
-  "title": "AI Engineer & Full-Stack Architect",
-  "description": "Building intelligent systems at the intersection of AI and scalable architecture",
-  "ctaText": "View Projects",
-  "ctaLink": "#projects",
-  "highlightText": "Staff AI Engineer @ TechCorp AI"
+  "name": "AATHIF B",
+  "title": "Frontend / Full-stack Developer",
+  "description": "Building scalable web applications using React.js, Next.js, TypeScript, and Python (FastAPI).",
+  "ctaText": "Contact Me",
+  "ctaLink": "#contact",
+  "highlightText": "Frontend / Full-stack Developer"
 }

@@ -1,0 +1,50 @@
+{
+  "personalInfo": {
+    "name": "AATHIF B",
+    "title": "Frontend / Full-stack Developer",
+    "tagline": "Building scalable web applications and AI-powered features",
+    "highlightText": "Frontend / Full-stack Developer",
+    "bio": "Frontend / Full-stack developer with ~2 years of experience building scalable web applications using React.js, Next.js, TypeScript, and Python (FastAPI). Strong expertise in performance optimization, reusable component architecture, and REST API integration.",
+    "email": "aathif0710@gmail.com",
+    "phone": "+91 8870954579",
+    "resumeUrl": "/Aathif_SoftwareDeveloper_Resume_26.pdf"
+  },
+  "socialLinks": [
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/aathifb", "icon": "linkedin" },
+    { "platform": "GitHub", "url": "https://github.com", "icon": "github" },
+    { "platform": "Twitter", "url": "https://twitter.com", "icon": "twitter" }
+  ],
+  "navLinks": [
+    { "label": "Home", "href": "#hero" },
+    { "label": "About", "href": "#about" },
+    { "label": "Capabilities", "href": "#capabilities" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Tech Stack", "href": "#techstack" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "techCategories": {
+    "languages": "Languages",
+    "frameworks": "Frontend & Backend",
+    "ai_ml": "AI / ML",
+    "cloud": "Cloud & Infra",
+    "tools": "DevOps & Tools",
+    "database": "CMS & Database"
+  },
+  "techStack": [
+    { "name": "JavaScript", "category": "languages", "description": "Core web language", "experience": "Advanced" },
+    { "name": "TypeScript", "category": "languages", "description": "Static typing for JS", "experience": "Advanced" },
+    { "name": "Python", "category": "languages", "description": "AI & backend scripts", "experience": "Advanced" },
+    { "name": "React.js", "category": "frameworks", "description": "Frontend UI library", "experience": "Advanced" },
+    { "name": "Next.js", "category": "frameworks", "description": "React framework", "experience": "Advanced" },
+    { "name": "Tailwind CSS", "category": "frameworks", "description": "Utility CSS", "experience": "Advanced" },
+    { "name": "FastAPI", "category": "frameworks", "description": "Python web framework", "experience": "Intermediate" },
+    { "name": "Strapi CMS", "category": "database", "description": "Headless CMS", "experience": "Intermediate" },
+    { "name": "LLM Integration", "category": "ai_ml", "description": "AI systems", "experience": "Intermediate" },
+    { "name": "Git", "category": "tools", "description": "Version control", "experience": "Advanced" },
+    { "name": "GitHub Actions", "category": "tools", "description": "CI/CD tool", "experience": "Intermediate" },
+    { "name": "Docker", "category": "tools", "description": "Containerization", "experience": "Intermediate" },
+    { "name": "AWS", "category": "cloud", "description": "Cloud deployment", "experience": "Beginner" },
+    { "name": "Figma", "category": "tools", "description": "UI/UX Design tool", "experience": "Beginner" }
+  ]
+}

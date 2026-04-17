@@ -8,7 +8,8 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { navLinks } = config;
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
@@ -83,7 +84,7 @@ export default function Navbar() {
                 exit={{ opacity: 0, x: 10 }}
                 className="text-primary font-bold"
               >
-                AC
+                AA
               </motion.span>
             ) : (
               <motion.span
@@ -92,7 +93,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
               >
-                Alex<span className="text-primary">.</span>Chen
+                Aathif<span className="text-primary">.</span>B
               </motion.span>
             )}
           </AnimatePresence>

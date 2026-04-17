@@ -52,9 +52,13 @@ const bentoConfigs: Record<string, { className: string; description: string }> =
     className: "md:col-span-1 md:row-span-1", 
     description: "Scalable infrastructure and cloud-native solutions." 
   },
-  tools: { 
-    className: "md:col-span-1 md:row-span-1", 
-    description: "Essential utilities and database systems." 
+  tools: {
+    className: "md:col-span-1 md:row-span-1",
+    description: "Essential utilities and database systems."
+  },
+  database: {
+    className: "md:col-span-1 md:row-span-1",
+    description: "Database systems and CMS platforms."
   },
 };
 

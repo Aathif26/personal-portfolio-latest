@@ -5,9 +5,8 @@ import { motion } from "motion/react";
 import { Variants } from "motion/react";
 
 const heroStats = [
-  { value: "8+", label: "Years" },
-  { value: "50+", label: "Projects" },
-  { value: "20+", label: "AI Models" },
+  { value: "2+", label: "Years" },
+  { value: "10+", label: "Projects" }
 ];
 
 const fadeUp: Variants = {

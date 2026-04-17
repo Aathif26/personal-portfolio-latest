@@ -1,53 +1,50 @@
 [
   {
-    "id": "staff-eng",
-    "role": "Staff AI Engineer",
-    "company": "TechCorp AI",
-    "period": "2022 — Present",
-    "description": "Leading AI platform architecture and driving adoption of ML-powered features across the product suite.",
+    "id": "mstsoft-sd",
+    "role": "Software Developer",
+    "company": "MSTSoft",
+    "period": "Aug 2024 - Mar 2026",
+    "description": "Built scalable web apps using React, Next.js, and FastAPI with focus on performance and system efficiency.",
     "achievements": [
-      "Architected LLM infrastructure serving 5M+ daily requests with 99.9% uptime",
-      "Led team of 8 engineers building next-gen AI features, increasing user engagement by 40%",
-      "Designed RAG pipeline reducing hallucination rate by 65% in production",
-      "Established ML engineering best practices adopted across 4 product teams"
+      "Improved performance ~30% via code splitting, lazy loading, and optimized rendering",
+      "Developed reusable components and integrated FastAPI APIs to streamline workflows",
+      "Worked on AI features, Docker deployments, CI/CD, and AWS environments"
     ]
   },
   {
-    "id": "senior-eng",
-    "role": "Senior Full-Stack Engineer",
-    "company": "ScaleUp Inc.",
-    "period": "2020 — 2022",
-    "description": "Owned end-to-end architecture for the core product, from database to UI.",
+    "id": "mstsoft-intern",
+    "role": "Software Developer Intern",
+    "company": "MSTSoft",
+    "period": "Feb 2024 - Jul 2024",
+    "description": "Focused on frontend development and API integration for responsive web applications.",
     "achievements": [
-      "Rebuilt the frontend with Next.js, improving Core Web Vitals scores by 60%",
-      "Migrated monolith to microservices, reducing deploy times from 45min to 3min",
-      "Implemented real-time features serving 50K concurrent WebSocket connections",
-      "Mentored 5 junior engineers through architectural design reviews"
+      "Built responsive UI components using React.js and Tailwind CSS",
+      "Enhanced cross-device compatibility and UI performance",
+      "Assisted in REST API integration and feature implementation"
     ]
   },
   {
-    "id": "ml-eng",
-    "role": "Machine Learning Engineer",
-    "company": "DataFlow Labs",
-    "period": "2018 — 2020",
-    "description": "Built production ML systems for NLP and recommendation engines.",
+    "id": "ml-intern",
+    "role": "Machine Learning Intern",
+    "company": "Smartknower",
+    "period": "Sep 2022 - Nov 2022",
+    "description": "Built and evaluated machine learning models on structured datasets.",
     "achievements": [
-      "Developed NLP pipeline processing 2M+ documents daily with 94% accuracy",
-      "Built recommendation engine increasing click-through rates by 35%",
-      "Reduced model training costs by 50% through infrastructure optimization",
-      "Published internal ML toolkit used by 20+ data scientists"
+      "Implemented ML algorithms like Regression, KNN, and Decision Trees",
+      "Handled preprocessing, feature engineering, and model evaluation",
+      "Worked with Scikit-learn to train and validate models"
     ]
   },
   {
-    "id": "sde",
-    "role": "Software Development Engineer",
-    "company": "CloudBase",
-    "period": "2016 — 2018",
-    "description": "Full-stack development on cloud infrastructure management platform.",
+    "id": "datascience-intern",
+    "role": "Data Science Intern",
+    "company": "Data Science and Analytics Centre",
+    "period": "Apr 2022 - Jun 2024",
+    "description": "Worked on data analysis, preprocessing, and visualization to extract meaningful insights.",
     "achievements": [
-      "Built React component library used across 3 product teams",
-      "Designed RESTful APIs handling 10K+ requests/sec",
-      "Implemented CI/CD pipeline reducing release cycle from weekly to daily"
+      "Performed data cleaning and EDA using Pandas and NumPy",
+      "Created visualizations using Matplotlib/Seaborn for insights",
+      "Assisted in building basic predictive models"
     ]
   }
 ]

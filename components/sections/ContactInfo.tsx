@@ -1,6 +1,7 @@
 "use client";
 
-import { personalInfo } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { personalInfo } = config;
 import { ContactSocials } from "./ContactSocials";
 
 export function ContactInfo() {

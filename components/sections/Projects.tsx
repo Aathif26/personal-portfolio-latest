@@ -1,5 +1,6 @@
 import { SectionHeading } from "@/components/ui/section-heading";
-import { projects } from "@/data/portfolio";
+import projectsData from "@/content/projects.json";
+const projects = projectsData as any;
 import type { Project } from "@/types";
 import { ProjectsContent } from "./ProjectsContent";
 

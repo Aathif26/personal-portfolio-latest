@@ -60,7 +60,7 @@ const highlights = [
 export function AboutContent({ bio }: { bio: string }) {
   return (
     <div className="container-narrow relative z-10">
-      <header className="mb-20 md:mb-32 text-center">
+      <header className="mb-8 md:mb-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
