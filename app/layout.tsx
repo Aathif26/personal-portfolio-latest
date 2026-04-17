@@ -69,8 +69,6 @@ export const metadata: Metadata = {
 
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import SmoothScroll from "@/components/providers/SmoothScroll";
-import { AdminProvider } from "@/components/providers/AdminProvider";
-import AdminToolbar from "@/components/admin/AdminToolbar";
 
 export default function RootLayout({
   children,
@@ -132,13 +130,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${clashDisplay.variable} ${montserrat.variable} antialiased`}>
-        <AdminProvider>
-          <SmoothScroll>
-            {children}
-            <ThemeToggle />
-            {/* <AdminToolbar /> */}
-          </SmoothScroll>
-        </AdminProvider>
+        <SmoothScroll>
+          {children}
+          <ThemeToggle />
+        </SmoothScroll>
       </body>
     </html>
   );
