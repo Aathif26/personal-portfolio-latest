@@ -9,9 +9,6 @@ import TechStack from "@/components/sections/TechStack";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 
-// Revalidate page every hour (ISR)
-export const revalidate = 3600;
-
 export default async function Home() {
   const heroContent = await getHero();
   const aboutContent = await getAbout();

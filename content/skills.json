@@ -40,32 +40,17 @@
     "category": "frontend"
   },
   {
-    "name": "Node.js / Express",
-    "level": 92,
-    "category": "backend"
-  },
-  {
     "name": "Python / FastAPI",
     "level": 94,
     "category": "backend"
   },
   {
-    "name": "GraphQL",
-    "level": 85,
-    "category": "backend"
-  },
-  {
-    "name": "System Design",
-    "level": 90,
-    "category": "backend"
-  },
-  {
-    "name": "AWS / GCP",
+    "name": "AWS",
     "level": 88,
     "category": "devops"
   },
   {
-    "name": "Docker / K8s",
+    "name": "Docker",
     "level": 86,
     "category": "devops"
   },

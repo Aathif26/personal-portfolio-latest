@@ -11,8 +11,7 @@
   },
   "socialLinks": [
     { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/aathifb", "icon": "linkedin" },
-    { "platform": "GitHub", "url": "https://github.com", "icon": "github" },
-    { "platform": "Twitter", "url": "https://twitter.com", "icon": "twitter" }
+    { "platform": "GitHub", "url": "https://github.com/aathif26", "icon": "github" }
   ],
   "navLinks": [
     { "label": "Home", "href": "#hero" },
@@ -35,6 +34,7 @@
     { "name": "JavaScript", "category": "languages", "description": "Core web language", "experience": "Advanced" },
     { "name": "TypeScript", "category": "languages", "description": "Static typing for JS", "experience": "Advanced" },
     { "name": "Python", "category": "languages", "description": "AI & backend scripts", "experience": "Advanced" },
+    { "name": "SQL", "category": "languages", "description": "Database queries", "experience": "Advanced" },
     { "name": "React.js", "category": "frameworks", "description": "Frontend UI library", "experience": "Advanced" },
     { "name": "Next.js", "category": "frameworks", "description": "React framework", "experience": "Advanced" },
     { "name": "Tailwind CSS", "category": "frameworks", "description": "Utility CSS", "experience": "Advanced" },
@@ -45,6 +45,7 @@
     { "name": "GitHub Actions", "category": "tools", "description": "CI/CD tool", "experience": "Intermediate" },
     { "name": "Docker", "category": "tools", "description": "Containerization", "experience": "Intermediate" },
     { "name": "AWS", "category": "cloud", "description": "Cloud deployment", "experience": "Beginner" },
-    { "name": "Figma", "category": "tools", "description": "UI/UX Design tool", "experience": "Beginner" }
+    { "name": "Figma", "category": "tools", "description": "UI/UX Design tool", "experience": "Beginner" },
+    { "name": "Postman", "category": "tools", "description": "API testing tool", "experience": "Beginner" }
   ]
 }

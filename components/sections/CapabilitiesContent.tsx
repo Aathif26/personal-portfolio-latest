@@ -69,7 +69,7 @@ export function CapabilitiesContent({ displayItems }: { displayItems: Capability
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
     >
-      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-fr grid-cols-1 md:grid-cols-2 lg:gap-8">
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-fr grid-cols-1 md:grid-cols-2">
         {displayItems.map((item, i) => (
           <motion.div key={i} variants={itemVariants}>
             <BentoGridItem

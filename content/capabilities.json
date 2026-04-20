@@ -8,11 +8,9 @@
     "tags": [
       "Next.js",
       "React.js",
-      "React Native",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
-      "Redux"
+      "Framer Motion"
     ],
     "className": "md:col-span-1"
   },
@@ -23,12 +21,9 @@
     "iconColor": "emerald",
     "iconBg": "bg-emerald-500/10",
     "tags": [
-      "Node.js",
-      "Express",
-      "Supabase",
+      "FastAPI",
       "PostgreSQL",
       "MongoDB",
-      "Redis",
       "REST APIs"
     ],
     "className": "md:col-span-1"
@@ -44,9 +39,9 @@
       "Claude API",
       "Gemini API",
       "LangChain",
+      "LangGraph",
       "Vector DBs",
-      "Python",
-      "TensorFlow"
+      "Python"
     ],
     "className": "md:col-span-1"
   },
@@ -60,10 +55,9 @@
       "Git",
       "Docker",
       "AWS",
-      "Vercel",
-      "Linux",
-      "CI/CD",
-      "Postman"
+      "Postman",
+      "Figma",
+      "Chrome DevTools"
     ],
     "className": "md:col-span-1"
   }

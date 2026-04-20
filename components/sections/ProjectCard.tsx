@@ -44,7 +44,7 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
         </div>
       </motion.div>
 
-      <div className="flex-1 p-6 flex flex-col">
+      <div className="flex-1 p-6 md:p-8 flex flex-col">
         <div className="mb-4">
           <div className="flex items-center justify-between">
             <div className="flex gap-3">
