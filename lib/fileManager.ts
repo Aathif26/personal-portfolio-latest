@@ -15,17 +15,6 @@ export async function readJSON<T>(filename: string): Promise<T | null> {
   }
 }
 
-export async function writeJSON<T>(filename: string, data: T): Promise<boolean> {
-  try {
-    const filePath = path.join(CONTENT_DIR, filename);
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
-    return true;
-  } catch (error) {
-    console.error(`Error writing JSON file ${filename}:`, error);
-    return false;
-  }
-}
-
 export async function readMarkdown(filename: string): Promise<string | null> {
   try {
     const filePath = path.join(CONTENT_DIR, filename);
@@ -33,16 +22,5 @@ export async function readMarkdown(filename: string): Promise<string | null> {
   } catch (error) {
     console.error(`Error reading Markdown file ${filename}:`, error);
     return null;
-  }
-}
-
-export async function writeMarkdown(filename: string, content: string): Promise<boolean> {
-  try {
-    const filePath = path.join(CONTENT_DIR, filename);
-    await fs.writeFile(filePath, content, 'utf-8');
-    return true;
-  } catch (error) {
-    console.error(`Error writing Markdown file ${filename}:`, error);
-    return false;
   }
 }

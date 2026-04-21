@@ -1,6 +1,7 @@
 "use client";
 
-import { personalInfo } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { personalInfo } = config;
 import { ContactSocials } from "./ContactSocials";
 
 export function ContactInfo() {
@@ -9,7 +10,7 @@ export function ContactInfo() {
       {/* Availability status */}
       <div className="flex items-center gap-2">
         <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-        <span className="text-sm text-muted-foreground">Open for opportunities</span>
+        <span className="text-sm text-muted-foreground">Open to opportunities</span>
       </div>
 
       <div>

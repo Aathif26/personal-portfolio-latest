@@ -1,7 +1,8 @@
 "use client";
 
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { socialLinks } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { socialLinks } = config;
 
 const socialIconMap: Record<string, React.ReactNode> = {
   github: <FaGithub size={18} />,

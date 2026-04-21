@@ -60,7 +60,7 @@ const highlights = [
 export function AboutContent({ bio }: { bio: string }) {
   return (
     <div className="container-narrow relative z-10">
-      <header className="mb-20 md:mb-32 text-center">
+      <header className="mb-8 md:mb-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -83,13 +83,21 @@ export function AboutContent({ bio }: { bio: string }) {
       >
         {/* Bio — Left Column (5/12) */}
         <motion.div variants={fadeInLeft} className="lg:col-span-6 space-y-10 lg:pr-8">
-          <div className="space-y-6">
+          <div className="space-y-3">
             <h3 className="text-2xl md:text-3xl font-display font-bold tracking-tight bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               From Hello World to AI Systems
             </h3>
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg lg:text-xl font-light whitespace-pre-wrap">
               {bio}
             </p>
+            <a
+              href="/Aathif_SoftwareDeveloper_Resume_26.pdf"
+              download="Aathif_SoftwareDeveloper_Resume_26.pdf"
+              className="group inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm transition-all duration-300 hover:shadow-[0_0_40px_oklch(0.7_0.22_145/30%)] hover:scale-[1.03] active:scale-[0.98]"
+              aria-label="Download Resume (PDF)"
+            >
+              Download Resume
+            </a>
           </div>
 
           <div className="relative pl-8 py-4 border-l-2 border-primary/30 italic text-muted-foreground text-lg leading-relaxed bg-primary/5 rounded-r-2xl pr-6">
@@ -100,7 +108,7 @@ export function AboutContent({ bio }: { bio: string }) {
         {/* Highlights Grid — Right Column (7/12) */}
         <motion.div
           variants={fadeInRight}
-          className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
+          className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8"
         >
           {highlights.map((item) => (
             <HighlightCard key={item.title} item={item} />

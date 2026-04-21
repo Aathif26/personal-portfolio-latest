@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 import { Project } from "@/types";
 
 interface ProjectCardProps {
@@ -20,16 +21,18 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       whileHover={{ y: -8 }}
-      className="group relative flex flex-col surface-1 hover:surface-2 rounded-3xl cursor-pointer transition-all duration-500 border border-border/50 hover:accent-glow overflow-hidden bg-background shadow-lg max-h-96 max-w-full"
+      className="group relative flex flex-col surface-1 hover:surface-2 rounded-3xl cursor-pointer transition-all duration-500 border border-border/50 hover:accent-glow overflow-hidden bg-background shadow-lg h-full max-w-full"
     >
       <motion.div
         layoutId={`image-${project.id}-${layoutIdSuffix}`}
-        className="relative overflow-hidden h-2/3"
+        className="relative overflow-hidden h-48 sm:h-56 shrink-0"
       >
-        <img
+        <Image
           src={project.imageUrl}
           alt={project.title}
           className="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+          fill
+          unoptimized
         />
         <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent opacity-60" />
 
@@ -37,14 +40,14 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
         <div className="absolute top-4 left-4">
           <Badge
             variant="accent"
-            className="bg-primary/20 backdrop-blur-md border-primary/20 text-[9px] uppercase font-black px-2 py-0.5"
+            className="bg-primary/20 backdrop-blur-md border-primary/20 text-[9px] uppercase font-black px-2 py-0.5 text-white"
           >
             {project.category}
           </Badge>
         </div>
       </motion.div>
 
-      <div className="flex-1 p-6 flex flex-col">
+      <div className="flex-1 p-6 md:p-8 flex flex-col">
         <div className="mb-4">
           <div className="flex items-center justify-between">
             <div className="flex gap-3">

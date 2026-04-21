@@ -4,27 +4,44 @@ import { motion } from "motion/react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { TechTooltip } from "@/components/ui/tech-tooltip";
 import {
-  SiTypescript, SiPython, SiGo, SiRust,
-  SiNextdotjs, SiReact, SiFastapi, SiNodedotjs, SiExpress, SiTailwindcss,
-  SiPytorch, SiTensorflow, SiLangchain, SiHuggingface, SiOpenai, SiScikitlearn,
-  SiGooglecloud, SiDocker, SiKubernetes, SiTerraform, SiVercel,
-  SiGit, SiPostgresql, SiRedis, SiMongodb, SiApachekafka, SiGraphql,
+  SiTypescript, SiPython,
+  SiNextdotjs, SiReact, SiFastapi, SiTailwindcss,
+  SiLangchain, SiHuggingface, SiOpenai,
+  SiDocker, SiVercel,
+  SiGit, SiPostgresql, SiMongodb,
+  SiJavascript,
+  SiStrapi,
+  SiGithubactions,
+  SiFigma,
+  SiPostman,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { Code2, Layout, BrainCircuit, Cloud, Wrench } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
-  TypeScript: <SiTypescript />, Python: <SiPython />, Go: <SiGo />, Rust: <SiRust />,
+  JavaScript: <SiJavascript />, 
+  TypeScript: <SiTypescript />, 
+  Python: <SiPython />,
   SQL: <TbSql />,
-  "Next.js": <SiNextdotjs />, React: <SiReact />, FastAPI: <SiFastapi />,
-  "Node.js": <SiNodedotjs />, Express: <SiExpress />, "Tailwind CSS": <SiTailwindcss />,
-  PyTorch: <SiPytorch />, TensorFlow: <SiTensorflow />, LangChain: <SiLangchain />,
-  "Hugging Face": <SiHuggingface />, OpenAI: <SiOpenai />, "scikit-learn": <SiScikitlearn />,
-  AWS: <FaAws />, GCP: <SiGooglecloud />, Docker: <SiDocker />,
-  Kubernetes: <SiKubernetes />, Terraform: <SiTerraform />, Vercel: <SiVercel />,
-  Git: <SiGit />, PostgreSQL: <SiPostgresql />, Redis: <SiRedis />,
-  MongoDB: <SiMongodb />, Kafka: <SiApachekafka />, GraphQL: <SiGraphql />,
+  "Next.js": <SiNextdotjs />, 
+  "React.js": <SiReact />, 
+  FastAPI: <SiFastapi />,
+  "Tailwind CSS": <SiTailwindcss />,
+  LangChain: <SiLangchain />,
+  "Hugging Face": <SiHuggingface />, 
+  OpenAI: <SiOpenai />,
+  AWS: <FaAws />, 
+  Docker: <SiDocker />,
+  Vercel: <SiVercel />,
+  Git: <SiGit />, 
+  "GitHub Actions": <SiGithubactions />,
+  PostgreSQL: <SiPostgresql />,
+  MongoDB: <SiMongodb />,
+  "Strapi CMS": <SiStrapi />,
+  "LLM Integration": <SiOpenai />,
+  Figma: <SiFigma />,
+  Postman: <SiPostman />
 };
 
 const categoryIcons: Record<string, React.ReactNode> = {
@@ -37,11 +54,11 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 const bentoConfigs: Record<string, { className: string; description: string }> = {
   languages: { 
-    className: "md:col-span-2 md:row-span-2", 
+    className: "md:col-span-1 md:row-span-1", 
     description: "The core syntax I use to communicate with machines." 
   },
   frameworks: { 
-    className: "md:col-span-1 md:row-span-2", 
+    className: "md:col-span-1 md:row-span-1", 
     description: "Powerful libraries and frameworks that speed up development." 
   },
   ai_ml: { 
@@ -52,9 +69,13 @@ const bentoConfigs: Record<string, { className: string; description: string }> =
     className: "md:col-span-1 md:row-span-1", 
     description: "Scalable infrastructure and cloud-native solutions." 
   },
-  tools: { 
-    className: "md:col-span-1 md:row-span-1", 
-    description: "Essential utilities and database systems." 
+  tools: {
+    className: "md:col-span-1 md:row-span-1",
+    description: "Essential utilities and database systems."
+  },
+  database: {
+    className: "md:col-span-1 md:row-span-1",
+    description: "Database systems and CMS platforms."
   },
 };
 

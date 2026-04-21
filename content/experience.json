@@ -1,53 +1,50 @@
 [
   {
-    "id": "staff-eng",
-    "role": "Staff AI Engineer",
-    "company": "TechCorp AI",
-    "period": "2022 — Present",
-    "description": "Leading AI platform architecture and driving adoption of ML-powered features across the product suite.",
+    "id": "mstsoft-sd",
+    "role": "Software Developer",
+    "company": "MSTSoft",
+    "period": "Aug 2024 – Mar 2026",
+    "description": "Built scalable full-stack apps with React.js, Next.js, TypeScript, and FastAPI — focused on performance and production reliability.",
     "achievements": [
-      "Architected LLM infrastructure serving 5M+ daily requests with 99.9% uptime",
-      "Led team of 8 engineers building next-gen AI features, increasing user engagement by 40%",
-      "Designed RAG pipeline reducing hallucination rate by 65% in production",
-      "Established ML engineering best practices adopted across 4 product teams"
+      "Reduced page load times by ~30% via code splitting, lazy loading, and SSR optimizations",
+      "Built reusable TypeScript component libraries and FastAPI REST APIs, accelerating feature delivery",
+      "Shipped LLM-powered features (OpenAI, Claude) deployed on AWS with Docker and CI/CD pipelines"
     ]
   },
   {
-    "id": "senior-eng",
-    "role": "Senior Full-Stack Engineer",
-    "company": "ScaleUp Inc.",
-    "period": "2020 — 2022",
-    "description": "Owned end-to-end architecture for the core product, from database to UI.",
+    "id": "mstsoft-intern",
+    "role": "Software Developer Intern",
+    "company": "MSTSoft",
+    "period": "Feb 2024 – Jul 2024",
+    "description": "Developed responsive web apps with React.js and Tailwind CSS, integrating REST APIs for full feature delivery.",
     "achievements": [
-      "Rebuilt the frontend with Next.js, improving Core Web Vitals scores by 60%",
-      "Migrated monolith to microservices, reducing deploy times from 45min to 3min",
-      "Implemented real-time features serving 50K concurrent WebSocket connections",
-      "Mentored 5 junior engineers through architectural design reviews"
+      "Built accessible, responsive UI components with React.js and Tailwind CSS",
+      "Integrated REST APIs and contributed features that improved app performance and engagement",
+      "Delivered production-ready code in agile sprints with consistent quality and test coverage"
     ]
   },
   {
-    "id": "ml-eng",
-    "role": "Machine Learning Engineer",
-    "company": "DataFlow Labs",
-    "period": "2018 — 2020",
-    "description": "Built production ML systems for NLP and recommendation engines.",
+    "id": "ml-intern",
+    "role": "Machine Learning Intern",
+    "company": "Smartknower",
+    "period": "Sep 2022 – Nov 2022",
+    "description": "Implemented and evaluated supervised machine learning models on structured datasets using Python and Scikit-learn.",
     "achievements": [
-      "Developed NLP pipeline processing 2M+ documents daily with 94% accuracy",
-      "Built recommendation engine increasing click-through rates by 35%",
-      "Reduced model training costs by 50% through infrastructure optimization",
-      "Published internal ML toolkit used by 20+ data scientists"
+      "Built and tuned ML models (Linear Regression, KNN, Decision Trees) with Scikit-learn",
+      "Performed data preprocessing, feature engineering, and model evaluation to improve accuracy",
+      "Completed end-to-end ML lifecycle: data ingestion → model training → validation → reporting"
     ]
   },
   {
-    "id": "sde",
-    "role": "Software Development Engineer",
-    "company": "CloudBase",
-    "period": "2016 — 2018",
-    "description": "Full-stack development on cloud infrastructure management platform.",
+    "id": "datascience-intern",
+    "role": "Data Science Intern",
+    "company": "Data Science and Analytics Centre",
+    "period": "Apr 2022 – Jun 2022",
+    "description": "Conducted data analysis, preprocessing, and visualization to extract actionable business insights from structured datasets.",
     "achievements": [
-      "Built React component library used across 3 product teams",
-      "Designed RESTful APIs handling 10K+ requests/sec",
-      "Implemented CI/CD pipeline reducing release cycle from weekly to daily"
+      "Conducted EDA and data cleaning with Pandas and NumPy on real-world datasets",
+      "Built data visualizations with Matplotlib and Seaborn to communicate insights to stakeholders",
+      "Built baseline predictive models and interpreted results for data-driven decision-making"
     ]
   }
 ]

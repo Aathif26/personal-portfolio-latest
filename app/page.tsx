@@ -1,8 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import Navbar from "@/components/layout/Navbar";
 import { getHero, getAbout, getProjects, getCapabilities, getExperience } from "@/lib/content";
-import { EditableSection } from "@/components/admin/EditableSection";
-import { updateHero, updateAbout, updateProjects, updateCapabilities, updateExperience } from "@/actions/contentActions";
 import About from "@/components/sections/About";
 import Capabilities from "@/components/sections/Capabilities";
 import Projects from "@/components/sections/Projects";
@@ -10,9 +8,6 @@ import Experience from "@/components/sections/Experience";
 import TechStack from "@/components/sections/TechStack";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
-
-// Revalidate page every hour (ISR)
-export const revalidate = 3600;
 
 export default async function Home() {
   const heroContent = await getHero();
@@ -25,51 +20,11 @@ export default async function Home() {
     <>
       <Navbar />
       <main>
-        <EditableSection 
-          id="hero" 
-          label="Hero Section" 
-          onSave={updateHero} 
-          currentData={heroContent}
-        >
-          <Hero content={heroContent || undefined} />
-        </EditableSection>
-
-        <EditableSection 
-          id="about" 
-          label="About Section" 
-          onSave={updateAbout} 
-          currentData={aboutContent}
-          isMarkdown
-        >
-          <About content={aboutContent || undefined} />
-        </EditableSection>
-
-        <EditableSection 
-          id="capabilities" 
-          label="Capabilities Section" 
-          onSave={updateCapabilities} 
-          currentData={capabilitiesContent}
-        >
-          <Capabilities items={capabilitiesContent || undefined} />
-        </EditableSection>
-
-        <EditableSection 
-          id="projects" 
-          label="Projects Section" 
-          onSave={updateProjects} 
-          currentData={projectsContent}
-        >
-          <Projects initialProjects={projectsContent || undefined} />
-        </EditableSection>
-
-        <EditableSection 
-          id="experience" 
-          label="Experience Section" 
-          onSave={updateExperience} 
-          currentData={experienceContent}
-        >
-          <Experience items={experienceContent || undefined} />
-        </EditableSection>
+        <Hero content={heroContent || undefined} />
+        <About content={aboutContent || undefined} />
+        <Capabilities items={capabilitiesContent || undefined} />
+        <Projects initialProjects={projectsContent || undefined} />
+        <Experience items={experienceContent || undefined} />
         <TechStack />
         <Contact />
       </main>

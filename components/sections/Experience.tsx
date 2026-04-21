@@ -6,7 +6,7 @@ export default function Experience({ items }: { items?: ExperienceType[] }) {
   const displayItems = items || [];
   
   return (
-    <section id="experience" className="section-padding-sm relative overflow-hidden">
+    <section id="experience" className="section-padding relative overflow-hidden">
       {/* Background Orbs for depth */}
       <div className="orb w-96 h-96 bg-primary/5 top-1/4 -right-48" />
       <div className="orb w-72 h-72 bg-primary/3 bottom-1/4 -left-36" />

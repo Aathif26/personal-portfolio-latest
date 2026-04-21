@@ -16,7 +16,7 @@ export function HighlightCard({ item }: { item: HighlightItem }) {
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="surface-1 rounded-3xl p-4 md:p-6 border border-border/40 hover:border-primary/40 transition-all duration-300 group overflow-hidden relative cursor-default shadow-sm hover:shadow-xl hover:shadow-primary/5"
+      className="surface-1 rounded-3xl p-6 md:p-8 border border-border/40 hover:border-primary/40 transition-all duration-300 group overflow-hidden relative cursor-default shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:cursor-pointer"
     >
       {/* Icon Wrapper */}
       <div className="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors duration-300">

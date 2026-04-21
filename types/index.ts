@@ -49,6 +49,8 @@ export interface Capability {
   icon: string;
   title: string;
   description: string;
+  iconBg?: string;
+  tags?: string[];
 }
 
 export interface ContactFormValues {

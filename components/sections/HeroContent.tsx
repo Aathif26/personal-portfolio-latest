@@ -1,16 +1,16 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
-import { personalInfo, socialLinks } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { personalInfo, socialLinks } = config;
 import { HiArrowDown, HiEnvelope } from "react-icons/hi2";
-import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { HeroStats } from "./HeroStats";
 import { HeroData } from "@/types";
 
 const socialIconMap: Record<string, React.ReactNode> = {
   github: <FaGithub size={18} />,
   linkedin: <FaLinkedinIn size={18} />,
-  twitter: <FaXTwitter size={18} />,
 };
 
 const containerVariants: Variants = {
@@ -99,18 +99,18 @@ export function HeroContent({ content = personalInfo }: { content?: Partial<Hero
 
           <motion.div variants={scalePop} className="mt-4 flex flex-col sm:flex-row items-center gap-3">
             <button
-              onClick={() => handleScroll("#contact")}
-              className="group inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm transition-all duration-300 hover:shadow-[0_0_40px_oklch(0.7_0.22_145/30%)] hover:scale-[1.03] active:scale-[0.98]"
-            >
-              <HiEnvelope size={16} className="transition-transform duration-300 group-hover:-translate-y-0.5" />
-              {ctaText}
-            </button>
-            <button
               onClick={() => handleScroll("#projects")}
-              className="group inline-flex items-center gap-2 px-7 py-3 rounded-full border border-border/60 bg-background/50 backdrop-blur-sm text-foreground font-semibold text-sm transition-all duration-300 hover:border-primary/30 hover:bg-primary/5 active:scale-[0.98]"
+              className="group inline-flex items-center gap-2 px-7 py-3 rounded-full border border-border/60 bg-background/50 backdrop-blur-sm text-foreground font-semibold text-sm transition-all duration-300 hover:border-primary/30 hover:bg-primary/5 active:scale-[0.98] hover:cursor-pointer"
             >
               View Projects
               <HiArrowDown size={14} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+            </button>
+            <button
+              onClick={() => handleScroll("#contact")}
+              className="group inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm transition-all duration-300 hover:shadow-[0_0_40px_oklch(0.7_0.22_145/30%)] hover:scale-[1.03] active:scale-[0.98] hover:cursor-pointer"
+            >
+              <HiEnvelope size={16} className="transition-transform duration-300 group-hover:-translate-y-0.5" />
+              {ctaText}
             </button>
           </motion.div>
 

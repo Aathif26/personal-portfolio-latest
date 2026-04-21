@@ -11,23 +11,25 @@ interface StaggerChildrenProps {
   as?: "div" | "ul" | "ol";
 }
 
+const sharedProps = (variants: Variants, className?: string) => ({
+  initial: "hidden" as const,
+  whileInView: "visible" as const,
+  viewport: { once: true, amount: 0.15 },
+  variants,
+  className: cn(className),
+});
+
 export default function StaggerChildren({
   children,
   className,
   variants = staggerContainer,
   as = "div",
 }: StaggerChildrenProps) {
-  const Component = motion.create(as);
-
-  return (
-    <Component
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
-      variants={variants}
-      className={cn(className)}
-    >
-      {children}
-    </Component>
-  );
+  if (as === "ul") {
+    return <motion.ul {...sharedProps(variants, className)}>{children}</motion.ul>;
+  }
+  if (as === "ol") {
+    return <motion.ol {...sharedProps(variants, className)}>{children}</motion.ol>;
+  }
+  return <motion.div {...sharedProps(variants, className)}>{children}</motion.div>;
 }

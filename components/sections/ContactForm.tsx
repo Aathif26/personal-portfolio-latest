@@ -5,6 +5,7 @@ import { Formik, Form, Field, type FieldProps } from "formik";
 import { contactSchema } from "@/schemas/contact";
 import { cn } from "@/lib/utils";
 import { HiCheckCircle } from "react-icons/hi2";
+import emailjs from "@emailjs/browser";
 import { ContactFormValues } from "@/types";
 
 const initialValues: ContactFormValues = {
@@ -91,12 +92,27 @@ function FormField({
 
 export function ContactForm({ submitted, setSubmitted }: { submitted: boolean, setSubmitted: (b: boolean) => void }) {
   const handleSubmit = async (
-    _values: ContactFormValues,
+    values: ContactFormValues,
     { setSubmitting }: { setSubmitting: (b: boolean) => void }
   ) => {
-    await new Promise((r) => setTimeout(r, 1500));
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        message: values.message,
+      };
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setSubmitted(true);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -116,9 +132,9 @@ export function ContactForm({ submitted, setSubmitted }: { submitted: boolean, s
             <HiCheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
           </motion.div>
           <h3 className="font-display text-xl font-semibold text-foreground mb-2">Message Sent!</h3>
-          <p className="text-sm text-muted-foreground mb-6">Thank you for reaching out. I&apos;ll get back to you soon.</p>
+          <p className="text-sm text-muted-foreground mb-6">Thank you! I’ll reply soon.</p>
           <button onClick={() => setSubmitted(false)} className="text-sm text-primary hover:underline">
-            Send another message
+            Send another
           </button>
         </motion.div>
       ) : (

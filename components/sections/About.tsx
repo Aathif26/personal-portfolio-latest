@@ -1,4 +1,5 @@
-import { personalInfo } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { personalInfo } = config;
 import { AboutContent } from "./AboutContent";
 
 export default function About({ content }: { content?: string }) {
