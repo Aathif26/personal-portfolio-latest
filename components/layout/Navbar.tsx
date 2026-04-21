@@ -82,7 +82,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
-                className="text-primary font-bold"
+                className="text-primary font-bold hover:cursor-pointer"
               >
                 AA
               </motion.span>
@@ -100,7 +100,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Navigation */}
-        <div 
+        <div
           className="hidden md:flex items-center gap-1"
           onMouseLeave={() => setHovered(null)}
         >
@@ -114,7 +114,7 @@ export default function Navbar() {
                 onMouseEnter={() => setHovered(link.href)}
                 onClick={() => handleClick(link.href)}
                 className={cn(
-                  "relative px-4 py-1.5 text-sm font-medium transition-colors duration-300",
+                  "relative px-4 py-1.5 text-sm font-medium transition-colors duration-300 hover:cursor-pointer",
                   isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 )}
               >

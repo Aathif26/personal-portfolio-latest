@@ -3,48 +3,48 @@
     "id": "mstsoft-sd",
     "role": "Software Developer",
     "company": "MSTSoft",
-    "period": "Aug 2024 - Mar 2026",
-    "description": "Built scalable web apps using React, Next.js, and FastAPI with focus on performance and system efficiency.",
+    "period": "Aug 2024 – Mar 2026",
+    "description": "Built scalable full-stack apps with React.js, Next.js, TypeScript, and FastAPI — focused on performance and production reliability.",
     "achievements": [
-      "Improved performance ~30% via code splitting, lazy loading, and optimized rendering",
-      "Developed reusable components and integrated FastAPI APIs to streamline workflows",
-      "Worked on AI features, Docker deployments, CI/CD, and AWS environments"
+      "Reduced page load times by ~30% via code splitting, lazy loading, and SSR optimizations",
+      "Built reusable TypeScript component libraries and FastAPI REST APIs, accelerating feature delivery",
+      "Shipped LLM-powered features (OpenAI, Claude) deployed on AWS with Docker and CI/CD pipelines"
     ]
   },
   {
     "id": "mstsoft-intern",
     "role": "Software Developer Intern",
     "company": "MSTSoft",
-    "period": "Feb 2024 - Jul 2024",
-    "description": "Focused on frontend development and API integration for responsive web applications.",
+    "period": "Feb 2024 – Jul 2024",
+    "description": "Developed responsive web apps with React.js and Tailwind CSS, integrating REST APIs for full feature delivery.",
     "achievements": [
-      "Built responsive UI components using React.js and Tailwind CSS",
-      "Enhanced cross-device compatibility and UI performance",
-      "Assisted in REST API integration and feature implementation"
+      "Built accessible, responsive UI components with React.js and Tailwind CSS",
+      "Integrated REST APIs and contributed features that improved app performance and engagement",
+      "Delivered production-ready code in agile sprints with consistent quality and test coverage"
     ]
   },
   {
     "id": "ml-intern",
     "role": "Machine Learning Intern",
     "company": "Smartknower",
-    "period": "Sep 2022 - Nov 2022",
-    "description": "Built and evaluated machine learning models on structured datasets.",
+    "period": "Sep 2022 – Nov 2022",
+    "description": "Implemented and evaluated supervised machine learning models on structured datasets using Python and Scikit-learn.",
     "achievements": [
-      "Implemented ML algorithms like Regression, KNN, and Decision Trees",
-      "Handled preprocessing, feature engineering, and model evaluation",
-      "Worked with Scikit-learn to train and validate models"
+      "Built and tuned ML models (Linear Regression, KNN, Decision Trees) with Scikit-learn",
+      "Performed data preprocessing, feature engineering, and model evaluation to improve accuracy",
+      "Completed end-to-end ML lifecycle: data ingestion → model training → validation → reporting"
     ]
   },
   {
     "id": "datascience-intern",
     "role": "Data Science Intern",
     "company": "Data Science and Analytics Centre",
-    "period": "Apr 2022 - Jun 2024",
-    "description": "Worked on data analysis, preprocessing, and visualization to extract meaningful insights.",
+    "period": "Apr 2022 – Jun 2022",
+    "description": "Conducted data analysis, preprocessing, and visualization to extract actionable business insights from structured datasets.",
     "achievements": [
-      "Performed data cleaning and EDA using Pandas and NumPy",
-      "Created visualizations using Matplotlib/Seaborn for insights",
-      "Assisted in building basic predictive models"
+      "Conducted EDA and data cleaning with Pandas and NumPy on real-world datasets",
+      "Built data visualizations with Matplotlib and Seaborn to communicate insights to stakeholders",
+      "Built baseline predictive models and interpreted results for data-driven decision-making"
     ]
   }
 ]

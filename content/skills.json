@@ -1,32 +1,12 @@
 [
   {
-    "name": "Machine Learning",
-    "level": 95,
-    "category": "ai"
-  },
-  {
-    "name": "Deep Learning / NLP",
+    "name": "React.js / Next.js",
     "level": 92,
-    "category": "ai"
-  },
-  {
-    "name": "LLM Fine-tuning",
-    "level": 90,
-    "category": "ai"
-  },
-  {
-    "name": "Computer Vision",
-    "level": 85,
-    "category": "ai"
-  },
-  {
-    "name": "React / Next.js",
-    "level": 95,
     "category": "frontend"
   },
   {
     "name": "TypeScript",
-    "level": 93,
+    "level": 88,
     "category": "frontend"
   },
   {
@@ -35,38 +15,58 @@
     "category": "frontend"
   },
   {
-    "name": "Motion / Animation",
-    "level": 88,
+    "name": "Framer Motion",
+    "level": 80,
     "category": "frontend"
   },
   {
     "name": "Python / FastAPI",
-    "level": 94,
+    "level": 85,
     "category": "backend"
   },
   {
-    "name": "AWS",
+    "name": "REST API Development",
     "level": 88,
-    "category": "devops"
+    "category": "backend"
+  },
+  {
+    "name": "LLM Integration",
+    "level": 82,
+    "category": "ai"
+  },
+  {
+    "name": "OpenAI / Claude API",
+    "level": 80,
+    "category": "ai"
+  },
+  {
+    "name": "Machine Learning",
+    "level": 72,
+    "category": "ai"
   },
   {
     "name": "Docker",
-    "level": 86,
+    "level": 78,
     "category": "devops"
   },
   {
     "name": "CI/CD Pipelines",
-    "level": 84,
+    "level": 75,
+    "category": "devops"
+  },
+  {
+    "name": "AWS",
+    "level": 65,
     "category": "devops"
   },
   {
     "name": "PostgreSQL",
-    "level": 90,
+    "level": 80,
     "category": "database"
   },
   {
     "name": "MongoDB",
-    "level": 82,
+    "level": 72,
     "category": "database"
   }
 ]

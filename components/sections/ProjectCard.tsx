@@ -37,7 +37,7 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
         <div className="absolute top-4 left-4">
           <Badge
             variant="accent"
-            className="bg-primary/20 backdrop-blur-md border-primary/20 text-[9px] uppercase font-black px-2 py-0.5"
+            className="bg-primary/20 backdrop-blur-md border-primary/20 text-[9px] uppercase font-black px-2 py-0.5 text-white"
           >
             {project.category}
           </Badge>

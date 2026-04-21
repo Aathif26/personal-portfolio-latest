@@ -42,7 +42,7 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
   const visibleProjects = filteredProjects.slice(0, visibleCount);
 
   useEffect(() => {
-    setVisibleCount(4);
+    setVisibleCount(6);
   }, [selectedCategory]);
 
   return (

@@ -1,7 +1,7 @@
 [
   {
     "title": "Frontend Development",
-    "description": "Building responsive & interactive UIs",
+    "description": "High-performance UIs with React.js & Next.js",
     "icon": "layout",
     "iconColor": "blue",
     "iconBg": "bg-blue-500/10",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Backend Architecture",
-    "description": "Scalable server-side solutions",
+    "description": "Scalable REST APIs & server-side systems with FastAPI",
     "icon": "server",
     "iconColor": "emerald",
     "iconBg": "bg-emerald-500/10",
@@ -29,8 +29,8 @@
     "className": "md:col-span-1"
   },
   {
-    "title": "AI & Machine Learning",
-    "description": "Integrating intelligent features",
+    "title": "AI & LLM Integration",
+    "description": "LLM agents, RAG pipelines & AI features for production",
     "icon": "brain",
     "iconColor": "purple",
     "iconBg": "bg-purple-500/10",
@@ -46,8 +46,8 @@
     "className": "md:col-span-1"
   },
   {
-    "title": "Tools & DevOps",
-    "description": "Ops, deployment & workflow",
+    "title": "DevOps & Cloud",
+    "description": "CI/CD pipelines, Docker deployments & AWS infrastructure",
     "icon": "terminal",
     "iconColor": "orange",
     "iconBg": "bg-orange-500/10",
@@ -55,9 +55,9 @@
       "Git",
       "Docker",
       "AWS",
+      "GitHub Actions",
       "Postman",
-      "Figma",
-      "Chrome DevTools"
+      "Figma"
     ],
     "className": "md:col-span-1"
   }
