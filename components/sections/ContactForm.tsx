@@ -5,6 +5,7 @@ import { Formik, Form, Field, type FieldProps } from "formik";
 import { contactSchema } from "@/schemas/contact";
 import { cn } from "@/lib/utils";
 import { HiCheckCircle } from "react-icons/hi2";
+import emailjs from "@emailjs/browser";
 import { ContactFormValues } from "@/types";
 
 const initialValues: ContactFormValues = {
@@ -91,12 +92,27 @@ function FormField({
 
 export function ContactForm({ submitted, setSubmitted }: { submitted: boolean, setSubmitted: (b: boolean) => void }) {
   const handleSubmit = async (
-    _values: ContactFormValues,
+    values: ContactFormValues,
     { setSubmitting }: { setSubmitting: (b: boolean) => void }
   ) => {
-    await new Promise((r) => setTimeout(r, 1500));
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        message: values.message,
+      };
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setSubmitted(true);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
