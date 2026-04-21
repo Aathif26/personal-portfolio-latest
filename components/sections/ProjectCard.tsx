@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 import { Project } from "@/types";
 
 interface ProjectCardProps {
@@ -26,10 +27,12 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
         layoutId={`image-${project.id}-${layoutIdSuffix}`}
         className="relative overflow-hidden h-48 sm:h-56 shrink-0"
       >
-        <img
+        <Image
           src={project.imageUrl}
           alt={project.title}
           className="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+          fill
+          unoptimized
         />
         <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent opacity-60" />
 

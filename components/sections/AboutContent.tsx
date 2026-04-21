@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import { Rocket, Users, Briefcase, GraduationCap } from "lucide-react";
 import { HighlightCard } from "./HighlightCard";
-import { ImProfile } from "react-icons/im";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -30 },

@@ -20,13 +20,14 @@ export default function Navbar() {
   const active = useActiveSection();
   const ref = useRef<HTMLDivElement>(null);
 
+  // Always start with false to match SSR output, then correct on the client
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
     const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    handleResize(); // set real value immediately after mount
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const { scrollY } = useScroll();

@@ -6,8 +6,8 @@ import { TechTooltip } from "@/components/ui/tech-tooltip";
 import {
   SiTypescript, SiPython,
   SiNextdotjs, SiReact, SiFastapi, SiTailwindcss,
-  SiPytorch, SiTensorflow, SiLangchain, SiHuggingface, SiOpenai, SiScikitlearn,
-  SiGooglecloud, SiDocker, SiVercel,
+  SiLangchain, SiHuggingface, SiOpenai,
+  SiDocker, SiVercel,
   SiGit, SiPostgresql, SiMongodb,
   SiJavascript,
   SiStrapi,

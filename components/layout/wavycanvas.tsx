@@ -210,7 +210,7 @@ export default function WaveCanvas() {
           Math.sin(x * wave.frequency * 0.4 + time * 0.003) *
             (wave.amplitude * 0.45) +
           mouseEff;
-        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        if (x === 0) { ctx.moveTo(x, y); } else { ctx.lineTo(x, y); }
       }
       ctx.lineWidth = 2;
       ctx.strokeStyle = wave.color;

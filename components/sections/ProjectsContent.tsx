@@ -31,7 +31,7 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
   useOutsideClick(ref, () => setActive(null));
 
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [visibleCount, setVisibleCount] = useState<number>(4);
+  const [visibleCount, setVisibleCount] = useState<number>(6);
 
   const categories = ["All", ...Array.from(new Set(initialProjects.map((p) => p.category)))];
 
@@ -41,9 +41,10 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
 
   const visibleProjects = filteredProjects.slice(0, visibleCount);
 
-  useEffect(() => {
+  const handleSelectCategory = (category: string) => {
+    setSelectedCategory(category);
     setVisibleCount(6);
-  }, [selectedCategory]);
+  };
 
   return (
     <>
@@ -57,7 +58,7 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
       <CategoryFilters
         categories={categories}
         selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
+        onSelectCategory={handleSelectCategory}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">

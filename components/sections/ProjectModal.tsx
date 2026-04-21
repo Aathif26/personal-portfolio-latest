@@ -6,6 +6,7 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 import { Project } from "@/types";
 import { RefObject } from "react";
+import Image from "next/image";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -53,7 +54,7 @@ export function ProjectModal({ project, onClose, layoutIdSuffix, modalRef }: Pro
               layoutId={`image-${project.id}-${layoutIdSuffix}`}
               className="relative w-full md:w-[45%] h-48 md:h-auto overflow-hidden shrink-0 border-b md:border-b-0 md:border-r border-border/50"
             >
-              <img
+              <Image
                 src={project.imageUrl}
                 alt={project.title}
                 className="w-full h-full object-cover"

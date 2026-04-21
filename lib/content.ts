@@ -18,8 +18,8 @@ export async function getProjects(): Promise<Project[] | null> {
   return await readJSON<Project[]>('projects.json');
 }
 
-export async function getCapabilities(): Promise<any[] | null> {
-  return await readJSON<any[]>('capabilities.json');
+export async function getCapabilities(): Promise<Capability[] | null> {
+  return await readJSON<Capability[]>('capabilities.json');
 }
 
 export async function getExperience(): Promise<Experience[] | null> {
