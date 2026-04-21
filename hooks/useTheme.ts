@@ -1,17 +1,14 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 
 export function useTheme() {
-  const [theme, setThemeState] = useState<"dark" | "light">("dark");
-
-  useEffect(() => {
+  const [theme, setThemeState] = useState<"dark" | "light">(() => {
+    if (typeof window === "undefined") return "dark";
     const stored = localStorage.getItem("theme") as "dark" | "light" | null;
-    const current = document.documentElement.classList.contains("dark")
-      ? "dark"
-      : "light";
-    setThemeState(stored ?? current);
-  }, []);
+    const current = document.documentElement.classList.contains("dark") ? "dark" : "light";
+    return stored ?? current;
+  });
 
   const setTheme = useCallback((newTheme: "dark" | "light") => {
     setThemeState(newTheme);

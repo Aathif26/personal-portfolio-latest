@@ -15,14 +15,7 @@ export default function ThemeToggle() {
 
   const isAdminPage = pathname?.startsWith('/admin');
 
-  if (isAdminPage) return null;
-
-  // Appearance logic: Show after scrolling a bit, or just keep it simple
-  // The user says "display from Hero to Contact". 
-  // I'll show it after 200px of scroll to keep the initial Hero clean, 
-  // and hide it when reaching the very bottom if needed (footer).
-  // But for now, let's keep it visible once the user starts moving.
-  
+  // Always call hooks unconditionally before any early returns
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 100) {
       setVisible(true);
@@ -30,6 +23,9 @@ export default function ThemeToggle() {
       setVisible(false);
     }
   });
+
+  if (isAdminPage) return null;
+
 
   return (
     <AnimatePresence>
