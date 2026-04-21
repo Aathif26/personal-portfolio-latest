@@ -52,9 +52,9 @@ export const BentoGridItem = ({
       
       <div className="relative z-10 flex flex-col h-full justify-between">
         <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col md:flex-row md:items-center items-start gap-4 md:gap-5">
             {icon && (
-              <div className="p-3 rounded-2xl bg-primary/10 text-primary group-hover/bento:scale-110 transition-transform duration-500">
+              <div className="shrink-0 p-3 rounded-2xl bg-primary/10 text-primary group-hover/bento:scale-110 transition-transform duration-500">
                 {icon}
               </div>
             )}

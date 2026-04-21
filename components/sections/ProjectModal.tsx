@@ -37,7 +37,7 @@ export function ProjectModal({ project, onClose, layoutIdSuffix, modalRef }: Pro
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="flex absolute top-6 right-6 items-center justify-center bg-surface-3 border border-border rounded-full h-12 w-12 z-[110] hover:bg-surface-2 transition-all shadow-xl active:scale-90 hover:cursor-pointer"
+            className="flex absolute top-4 right-4 md:top-6 md:right-6 items-center justify-center bg-surface-3 border border-border rounded-full h-10 w-10 md:h-12 md:w-12 z-[110] hover:bg-surface-2 transition-all shadow-xl active:scale-90 hover:cursor-pointer"
             onClick={onClose}
           >
             <CloseIcon />
@@ -51,7 +51,7 @@ export function ProjectModal({ project, onClose, layoutIdSuffix, modalRef }: Pro
             {/* Image Section */}
             <motion.div
               layoutId={`image-${project.id}-${layoutIdSuffix}`}
-              className="relative w-full md:w-[45%] h-64 md:h-auto overflow-hidden shrink-0 border-b md:border-b-0 md:border-r border-border/50"
+              className="relative w-full md:w-[45%] h-48 md:h-auto overflow-hidden shrink-0 border-b md:border-b-0 md:border-r border-border/50"
             >
               <img
                 src={project.imageUrl}

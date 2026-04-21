@@ -20,11 +20,11 @@ export function ProjectCard({ project, onClick, layoutIdSuffix }: ProjectCardPro
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       whileHover={{ y: -8 }}
-      className="group relative flex flex-col surface-1 hover:surface-2 rounded-3xl cursor-pointer transition-all duration-500 border border-border/50 hover:accent-glow overflow-hidden bg-background shadow-lg max-h-96 max-w-full"
+      className="group relative flex flex-col surface-1 hover:surface-2 rounded-3xl cursor-pointer transition-all duration-500 border border-border/50 hover:accent-glow overflow-hidden bg-background shadow-lg h-full max-w-full"
     >
       <motion.div
         layoutId={`image-${project.id}-${layoutIdSuffix}`}
-        className="relative overflow-hidden h-2/3"
+        className="relative overflow-hidden h-48 sm:h-56 shrink-0"
       >
         <img
           src={project.imageUrl}

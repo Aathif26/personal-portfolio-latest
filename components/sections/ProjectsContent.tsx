@@ -19,7 +19,7 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
     } else {
       document.body.style.overflow = "auto";
     }
-    
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setActive(null);
     };
@@ -36,8 +36,8 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
   const categories = ["All", ...Array.from(new Set(initialProjects.map((p) => p.category)))];
 
   const filteredProjects = selectedCategory === "All"
-      ? initialProjects
-      : initialProjects.filter((p) => p.category === selectedCategory);
+    ? initialProjects
+    : initialProjects.filter((p) => p.category === selectedCategory);
 
   const visibleProjects = filteredProjects.slice(0, visibleCount);
 
@@ -47,27 +47,27 @@ export function ProjectsContent({ initialProjects }: { initialProjects: Project[
 
   return (
     <>
-      <ProjectModal 
-        project={active} 
-        onClose={() => setActive(null)} 
-        layoutIdSuffix={id} 
-        modalRef={ref} 
+      <ProjectModal
+        project={active}
+        onClose={() => setActive(null)}
+        layoutIdSuffix={id}
+        modalRef={ref}
       />
 
-      <CategoryFilters 
-        categories={categories} 
-        selectedCategory={selectedCategory} 
-        onSelectCategory={setSelectedCategory} 
+      <CategoryFilters
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onSelectCategory={setSelectedCategory}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         <AnimatePresence mode="popLayout">
           {visibleProjects.map((project) => (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
-              onClick={() => setActive(project)} 
-              layoutIdSuffix={id} 
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => setActive(project)}
+              layoutIdSuffix={id}
             />
           ))}
         </AnimatePresence>
