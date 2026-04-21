@@ -116,9 +116,9 @@ export function ContactForm({ submitted, setSubmitted }: { submitted: boolean, s
             <HiCheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
           </motion.div>
           <h3 className="font-display text-xl font-semibold text-foreground mb-2">Message Sent!</h3>
-          <p className="text-sm text-muted-foreground mb-6">Thank you for reaching out. I&apos;ll get back to you soon.</p>
+          <p className="text-sm text-muted-foreground mb-6">Thank you! I’ll reply soon.</p>
           <button onClick={() => setSubmitted(false)} className="text-sm text-primary hover:underline">
-            Send another message
+            Send another
           </button>
         </motion.div>
       ) : (

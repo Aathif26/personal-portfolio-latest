@@ -1,5 +1,6 @@
 import { SectionHeading } from "@/components/ui/section-heading";
-import { techStack, techCategories } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { techStack, techCategories } = config as any;
 import { TechStackContent } from "./TechStackContent";
 
 export default function TechStack() {

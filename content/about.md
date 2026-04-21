@@ -1,6 +1,1 @@
-I'm a Staff-level engineer specializing in AI systems and full-stack architecture. 
-With 16+ years of experience spanning machine learning, distributed systems, and modern web platforms, 
-I design solutions that bridge cutting-edge AI research with production-grade engineering. 
-
-My work focuses on building intelligent, scalable products that push the boundaries of 
-what's possible at the intersection of AI and software architecture.
+Full-Stack & AI Developer with 2+ years building production-grade web apps with React.js, Next.js, TypeScript, and FastAPI. I integrate LLMs (OpenAI, Claude, Gemini) into real products — from responsive UIs to async backend pipelines deployed on AWS with Docker and CI/CD. My machine learning background lets me bridge AI research and product engineering, delivering fast, scalable, and maintainable systems.

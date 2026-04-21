@@ -1,0 +1,51 @@
+{
+  "personalInfo": {
+    "name": "AATHIF B",
+    "title": "Full-Stack & AI Developer",
+    "tagline": "Scalable web apps & AI-powered features — React.js, Next.js, FastAPI",
+    "highlightText": "Full-Stack & AI Developer",
+    "bio": "Full-Stack & AI Developer with 2+ years delivering production-grade apps using React.js, Next.js, TypeScript, and FastAPI. Expert in LLM integration, REST APIs, and cloud deployments on AWS with Docker and CI/CD.",
+    "email": "aathif0710@gmail.com",
+    "phone": "+91 8870954579",
+    "resumeUrl": "/Aathif_SoftwareDeveloper_Resume_26.pdf"
+  },
+  "socialLinks": [
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/aathifb", "icon": "linkedin" },
+    { "platform": "GitHub", "url": "https://github.com/aathif26", "icon": "github" }
+  ],
+  "navLinks": [
+    { "label": "Home", "href": "#hero" },
+    { "label": "About", "href": "#about" },
+    { "label": "Capabilities", "href": "#capabilities" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Tech Stack", "href": "#techstack" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "techCategories": {
+    "languages": "Languages",
+    "frameworks": "Frontend & Backend",
+    "ai_ml": "AI / ML",
+    "cloud": "Cloud & Infra",
+    "tools": "DevOps & Tools",
+    "database": "CMS & Database"
+  },
+  "techStack": [
+    { "name": "JavaScript", "category": "languages", "description": "ES2024 · Web Platform", "experience": "Advanced" },
+    { "name": "TypeScript", "category": "languages", "description": "Typed JavaScript", "experience": "Advanced" },
+    { "name": "Python", "category": "languages", "description": "AI & Backend", "experience": "Advanced" },
+    { "name": "SQL", "category": "languages", "description": "Relational Queries", "experience": "Advanced" },
+    { "name": "React.js", "category": "frameworks", "description": "UI Component Library", "experience": "Advanced" },
+    { "name": "Next.js", "category": "frameworks", "description": "SSR / SSG Framework", "experience": "Advanced" },
+    { "name": "Tailwind CSS", "category": "frameworks", "description": "Utility-First CSS", "experience": "Advanced" },
+    { "name": "FastAPI", "category": "frameworks", "description": "Async REST Framework", "experience": "Intermediate" },
+    { "name": "Strapi CMS", "category": "database", "description": "Headless CMS", "experience": "Intermediate" },
+    { "name": "LLM Integration", "category": "ai_ml", "description": "GPT · Claude · Gemini", "experience": "Intermediate" },
+    { "name": "Git", "category": "tools", "description": "Version control", "experience": "Advanced" },
+    { "name": "GitHub Actions", "category": "tools", "description": "Automated CI/CD", "experience": "Intermediate" },
+    { "name": "Docker", "category": "tools", "description": "Containerization", "experience": "Intermediate" },
+    { "name": "AWS", "category": "cloud", "description": "Cloud Infrastructure", "experience": "Beginner" },
+    { "name": "Figma", "category": "tools", "description": "UI/UX Prototyping", "experience": "Beginner" },
+    { "name": "Postman", "category": "tools", "description": "API Testing & Docs", "experience": "Beginner" }
+  ]
+}

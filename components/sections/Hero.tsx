@@ -1,4 +1,5 @@
-import { personalInfo } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { personalInfo } = config;
 import WaveCanvas from "@/components/layout/wavycanvas";
 import { HeroContent } from "./HeroContent";
 import { HeroData } from "@/types";

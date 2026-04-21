@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,7 +8,8 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { navLinks } = config;
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
@@ -18,6 +19,15 @@ export default function Navbar() {
   const [hovered, setHovered] = useState<string | null>(null);
   const active = useActiveSection();
   const ref = useRef<HTMLDivElement>(null);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const { scrollY } = useScroll();
 
@@ -50,22 +60,24 @@ export default function Navbar() {
           paddingLeft: "32px",
           paddingRight: "32px",
           y: 0,
+          borderRadius: "9999px",
         }}
         animate={{
-          width: scrolled ? "fit-content" : "100%",
-          maxWidth: scrolled ? "850px" : "1200px",
-          paddingLeft: scrolled ? "24px" : "32px",
-          paddingRight: scrolled ? "24px" : "32px",
-          y: scrolled ? 10 : 0,
+          width: isMobile ? "100%" : (scrolled ? "fit-content" : "100%"),
+          maxWidth: isMobile ? "100%" : (scrolled ? "850px" : "1200px"),
+          paddingLeft: isMobile ? "16px" : (scrolled ? "24px" : "32px"),
+          paddingRight: isMobile ? "16px" : (scrolled ? "24px" : "32px"),
+          y: isMobile ? 0 : (scrolled ? 10 : 0),
+          borderRadius: isMobile ? "0px" : "9999px"
         }}
         transition={{
           duration: 0.5,
           ease: [0.16, 1, 0.3, 1],
         }}
         className={cn(
-          "pointer-events-auto relative flex items-center justify-between h-14 rounded-full transition-all duration-700",
-          scrolled
-            ? "bg-background/80 backdrop-blur-xl border border-border shadow-2xl"
+          "pointer-events-auto relative flex items-center justify-between h-14 transition-all duration-700",
+          (scrolled || isMobile)
+            ? "bg-background/80 backdrop-blur-xl border border-border md:shadow-2xl"
             : "bg-transparent border-transparent"
         )}
       >
@@ -75,15 +87,15 @@ export default function Navbar() {
           className="font-display text-lg font-bold tracking-tight text-foreground hover:text-primary transition-all duration-300 mr-8 flex items-center"
         >
           <AnimatePresence mode="wait">
-            {scrolled ? (
+            {scrolled && !isMobile ? (
               <motion.span
                 key="logo-ac"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
-                className="text-primary font-bold"
+                className="text-primary font-bold hover:cursor-pointer"
               >
-                AC
+                AA
               </motion.span>
             ) : (
               <motion.span
@@ -92,14 +104,14 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
               >
-                Alex<span className="text-primary">.</span>Chen
+                Aathif<span className="text-primary">.</span>B
               </motion.span>
             )}
           </AnimatePresence>
         </button>
 
         {/* Desktop Navigation */}
-        <div 
+        <div
           className="hidden md:flex items-center gap-1"
           onMouseLeave={() => setHovered(null)}
         >
@@ -113,7 +125,7 @@ export default function Navbar() {
                 onMouseEnter={() => setHovered(link.href)}
                 onClick={() => handleClick(link.href)}
                 className={cn(
-                  "relative px-4 py-1.5 text-sm font-medium transition-colors duration-300",
+                  "relative px-4 py-1.5 text-sm font-medium transition-colors duration-300 hover:cursor-pointer",
                   isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 )}
               >

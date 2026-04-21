@@ -7,7 +7,7 @@ import { Experience as ExperienceType } from "@/types";
 
 export function ExperienceContent({ displayItems }: { displayItems: ExperienceType[] }) {
   const timelineData = displayItems.map((exp) => ({
-    title: exp.period.split(" — ")[0],
+    title: exp.role,
     content: (
       <motion.div
         initial={{ opacity: 0, x: 20 }}
@@ -16,13 +16,13 @@ export function ExperienceContent({ displayItems }: { displayItems: ExperienceTy
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="group relative"
       >
-        <div className="surface-1 rounded-2xl p-6 md:p-8 transition-all duration-500 hover:border-primary/30 hover:shadow-[0_0_40px_oklch(0.7_0.22_145/8%)] gradient-border">
+        <div className="surface-1 rounded-2xl p-5 md:p-8 transition-all duration-500 hover:border-primary/30 hover:shadow-[0_0_40px_oklch(0.7_0.22_145/8%)] gradient-border">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                {/* <h3 className="text-xl md:text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                   {exp.role}
-                </h3>
+                </h3> */}
                 <div className="flex items-center gap-2 mt-1">
                   <span className="text-primary font-medium">{exp.company}</span>
                   <span className="text-muted-foreground/30">•</span>

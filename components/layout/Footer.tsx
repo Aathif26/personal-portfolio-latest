@@ -1,6 +1,7 @@
 "use client";
 
-import { navLinks, socialLinks, personalInfo } from "@/data/portfolio";
+import config from "@/content/config.json";
+const { navLinks, socialLinks, personalInfo } = config;
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const socialIconMap: Record<string, React.ReactNode> = {

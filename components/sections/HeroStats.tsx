@@ -5,9 +5,8 @@ import { motion } from "motion/react";
 import { Variants } from "motion/react";
 
 const heroStats = [
-  { value: "8+", label: "Years" },
-  { value: "50+", label: "Projects" },
-  { value: "20+", label: "AI Models" },
+  { value: "2+", label: "Years" },
+  { value: "10+", label: "Projects" }
 ];
 
 const fadeUp: Variants = {
@@ -27,7 +26,7 @@ export function HeroStats() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="mt-6 grid grid-cols-3 gap-6 sm:gap-10 rounded-2xl border border-border/30 bg-background/40 backdrop-blur-sm px-6 py-4 sm:px-10 sm:py-5"
+      className="mt-6 grid grid-cols-2 gap-6 sm:gap-10 rounded-2xl border border-border/30 bg-background/40 backdrop-blur-sm px-6 py-4 sm:px-10 sm:py-5 w-fit"
     >
       {heroStats.map((stat) => (
         <div key={stat.label} className="text-center">
