@@ -20,10 +20,12 @@ export default function Navbar() {
   const active = useActiveSection();
   const ref = useRef<HTMLDivElement>(null);
 
-  const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" && window.innerWidth < 768);
+  // Always start with false to match SSR output, then correct on the client
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // set real value immediately after mount
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
