@@ -56,8 +56,8 @@ interface CapabilityItem {
   title: string;
   description: string;
   icon: string;
-  iconBg: string;
-  tags: string[];
+  iconBg?: string;
+  tags?: string[];
   className?: string;
 }
 
@@ -92,7 +92,7 @@ export function CapabilitiesContent({ displayItems }: { displayItems: Capability
                 variants={tagStagger}
                 className="flex flex-wrap gap-2 mt-4"
               >
-                {item.tags.map((tag) => (
+                {(item.tags ?? []).map((tag) => (
                   <motion.div key={tag} variants={tagVariants}>
                     <Badge variant="outline" className="py-1 px-3 bg-secondary/30 backdrop-blur-sm border-border/30 hover:bg-primary/5 hover:border-primary/20 transition-all duration-300">
                       <span className="font-mono text-sm tracking-tight">{tag}</span>
