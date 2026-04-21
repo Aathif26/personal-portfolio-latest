@@ -5,8 +5,8 @@ interface CapabilityItem {
   title: string;
   description: string;
   icon: string;
-  iconBg: string;
-  tags: string[];
+  iconBg?: string;
+  tags?: string[];
   className?: string;
 }
 
